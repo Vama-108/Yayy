@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year Drishti ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to top, #ffe6e9, #ffccd5);
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            background: url('welcome-bg.jpg') no-repeat center/cover;
+            padding: 120px 20px;
+            color: white;
+            text-shadow: 2px 2px 6px #000;
+        }
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Floating Hearts */
+        .heart-container {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            pointer-events: none;
+        }
+        .heart {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            bottom: 0;
+            background-color: #FF6F61;
+            clip-path: polygon(50% 0%, 61% 10%, 100% 38%, 86% 68%, 50% 100%, 14% 68%, 0% 38%, 39% 10%);
+            animation: float 6s ease-in infinite;
+        }
+        .heart:nth-child(1) { left: 10%; animation-delay: 0s; transform: scale(0.8); }
+        .heart:nth-child(2) { left: 30%; animation-delay: 1s; transform: scale(1.2); }
+        .heart:nth-child(3) { left: 50%; animation-delay: 0.5s; }
+        .heart:nth-child(4) { left: 70%; animation-delay: 1.5s; transform: scale(0.9); }
+        .heart:nth-child(5) { left: 90%; animation-delay: 2s; transform: scale(1.1); }
+
+        @keyframes float {
+            0% { transform: translateY(0) scale(1); opacity: 1; }
+            50% { transform: translateY(-50vh) scale(1.2); opacity: 0.8; }
+            100% { transform: translateY(-100vh) scale(0.8); opacity: 0; }
+        }
+
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            text-align: center;
+            color: #FF6F61;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .quotes p {
+            font-style: italic;
+            margin: 10px 0;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem;
+            color: #ff6f61;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #FF6F61;
+            color: white;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        /* Reveal Surprise */
+        .reveal-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ffffff;
+            color: #ff6f61;
+            border: 2px solid #ff6f61;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .reveal-button:hover {
+            background: #ff6f61;
+            color: white;
+        }
+
+        .love-letter {
+            display: none;
+            margin-top: 20px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: #FF6F61;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="heart-container">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <!-- Welcome Section -->
+    <header>
+        <h1>A Celebration of Love ❤️</h1>
+        <p>You are the best.</p>
+    </header>
+
+    <!-- Photo Gallery -->
+    <section class="Sweet Moments">
+        <h2>Photo Gallery</h2>
+        <div>
+            <img src="photo1.jpg" alt="Memory 1">
+            <img src="photo2.jpg" alt="Memory 2">
+            <img src="photo3.jpg" alt="Memory 3">
+        </div>
+    </section>
+
+    <!-- Words of Love -->
+    <section class="quotes">
+        <h2>Words of Love</h2>
+        <p>"Drishti, you are my sunshine on cloudy days and the star of my night skies."</p>
+        <p>"Every heartbeat whispers your name."</p>
+        <p>"You are the heartbeat of my happiness and the rhythm of my life."</p>
+        <p>"You are not just my love, you are my love".</p>
+    </section>
+
+    <!-- Love Letter -->
+    <footer>
+        <p>Made with ❤️ for my chudail</p>
+        <button class="reveal-button" id="reveal-button">Reveal a Love Letter</button>
+        <div class="love-letter" id="love-letter">
+            <p> Happy Valentine’s Day! in advance and wishing you a very happy new year..</p>
+            <p>Dearest Drishti,  
+
+                I can hardly put my feelings into words, but you are, without a doubt, the best thing that has happened to me this year. Every time I talk with you, it feels magical, like a tune I never want to end. Talking to you brightens my world, and I find myself wanting nothing more than to lose track of time in your presence.  
+                
+                "You have this way of turning ordinary moments into something extraordinary, and I find myself craving that magic every day."  
+                
+                Your eyes are mesmerizing—the most beautiful thing I have ever laid eyes on. And that smile? It's not just cute; it's the kind of smile that could light up the night and make hearts skip a beat.  
+                
+                I long to gaze deeply into your eyes, to lose myself in their endless depths. To hold you close, feel the warmth of your embrace, and savor the rhythm of your breath—as if it were the sweetest melody.  
+                
+                "In your arms is my peace, in your eyes is my forever."  
+                "When I am around you, the world stops. It's just you and me, and that's all I'll ever need."  
+                
+                I want to be by your side, always—your companion through every joy, every challenge, and every moment in between. Your videos just make me feel for you all the more. Every one of them is like meeting you for the first time, over and over again, falling harder each time.  
+                
+                Huff…  
+                
+                Drishti, I love you more than words can ever convey. You are my everything.  
+                Will you be my Valentine?  
+                
+                With all my love,  </p>
+                
+
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Reveal Love Letter
+        const revealButton = document.getElementById('reveal-button');
+        const loveLetter = document.getElementById('love-letter');
+
+        revealButton.addEventListener('click', () => {
+            loveLetter.style.display = 'block';
+            revealButton.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
+
+
